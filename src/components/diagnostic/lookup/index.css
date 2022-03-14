@@ -1,0 +1,4 @@
+.diagLookupForm{
+    display: flex;
+    flex-direction: column;
+}
