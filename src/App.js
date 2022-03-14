@@ -5,6 +5,7 @@ import Home from './components/home'
 import LogIn from './components/logIn';
 import SignUp from './components/signUp';
 import Header from './components/header'
+import Tools from './components/tools';
 import {getAuth, onAuthStateChanged} from 'firebase/auth'
 
 require('dotenv').config();
@@ -29,6 +30,9 @@ function App() {
                 </Route>
                 <Route path='/signup'>
                     <SignUp setUser={setUser}/>
+                </Route>
+                <Route path='/tools/:toolName'>
+                    <Tools/>
                 </Route>
 			</Switch>
 		</BrowserRouter>
