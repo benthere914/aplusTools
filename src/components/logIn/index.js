@@ -16,16 +16,16 @@ const LogIn = ({setUser}) => {
     }
     const emailLogin = async () => {
         const user = await emailPasswordSignIn(email, password);
-        await console.log(Object.values(user))
-        await console.log(user["FirebaseError"])
+        // await console.log(Object.values(user))
+        // await console.log(user["FirebaseError"])
         if (Object.values(user)[0] === "firebase"){
-            await console.log('success')
+            // await console.log('success')
             await setUser(user?.displayName)
             await history.push('/')
 
         }else {
-            await console.log('failure')
-            await console.log(Object.values(user))
+            // await console.log('failure')
+            // await console.log(Object.values(user))
             setError(Object.values(user)[0].slice(5))
         }
     }

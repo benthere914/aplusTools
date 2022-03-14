@@ -15,7 +15,7 @@ const Header = ({user}) => {
         if (!page) return
         if (page === history?.location?.pathname) return
         history.push(page)
-    }, [page])
+    }, [page, history])
     return (
 		<>
 			<Navbar bg="primary" variant="dark">

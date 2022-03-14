@@ -3,9 +3,7 @@ import { useHistory } from "react-router-dom"
 const Result = ({data}) => {
     const [model, type, style, modelNum, desc] = data
     const history = useHistory()
-    const goBackHandler = () => {
-        
-    }
+
     return (
     <>
         <Alert>
