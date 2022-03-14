@@ -14,12 +14,12 @@ const SignUp = ({setUser}) => {
         const user = await emailPasswordSignUp(userName, email, password);
         // await console.log(result)
         if (Object.values(user)[0] === "firebase"){
-            await console.log('success')
+            // await console.log('success')
             await setUser(user?.displayName)
             await history.push('/')
 
         }else {
-            await console.log('failure')
+            // await console.log('failure')
             setError(Object.values(user)[0].slice(5))
 
         }
