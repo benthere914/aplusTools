@@ -20,7 +20,8 @@ const Header = ({user}) => {
                         <Dropdown>
                             <Dropdown.Toggle>Tools</Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item onClick={() => {history.push('/priceCalc')}}>Price Calculator</Dropdown.Item>
+                                <Dropdown.Item onClick={() => {history.push('/tools/priceMultiplier')}}>Price Mulitiplier</Dropdown.Item>
+                                <Dropdown.Item onClick={() => {history.push('/tools/diagnosticLookup')}}>Diagnostic Lookup</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         </div>:
