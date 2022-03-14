@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import DiagnosticLookup from "../diagnosticLookup";
+import Diagnostic from "../diagnostic";
 import PriceMultiplier from "../priceMultiplier";
 
 const Tools = () => {
@@ -7,8 +7,8 @@ const Tools = () => {
     switch (params?.toolName) {
         case 'priceMultiplier':
             return (<><PriceMultiplier/></>)
-        case 'diagnosticLookup':
-            return (<><DiagnosticLookup/></>)
+        case 'diagnostic':
+            return (<><Diagnostic/></>)
         default:
             return (<><h1>There are no tools here</h1></>)
     }
